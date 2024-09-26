@@ -1,0 +1,9 @@
+<h1>View or Create lists</h1>
+
+<div id="lists">
+  <% @lists.each do |list| %>
+    <%= render list %>
+  <% end %>
+</div>
+
+<%= link_to "New List", new_list_path %>
